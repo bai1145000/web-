@@ -1,4 +1,6 @@
 from django.shortcuts import render,redirect,reverse
 
-def base(reqeust):
-    return render(reqeust,'base.html')
+def static(reqeust,html):
+    print(reqeust.url)
+
+    return render(reqeust,'static_index.html')

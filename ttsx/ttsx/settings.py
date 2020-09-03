@@ -23,9 +23,9 @@ sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 SECRET_KEY = '$wd1lg-tu56@217c8p%6$+om*5b58m611y1!n@gg%szwznc+82'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,10 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tinymce',  # 富文本编辑器
-    'user',#用胡模块
-    'goods',#商品模块
-    'cart',#购物车模块
-    'orders'#订单
+    'haystack', #全局搜索
+    'user',     #用户模块
+    'goods',    #商品模块
+    'cart',     #购物车模块
+    'orders',   #订单
 ]
 
 #django认证系统使用的用户models
@@ -84,10 +85,10 @@ WSGI_APPLICATION = 'ttsx.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ttsx',
+        'NAME': 'webitems',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': '192.168.163.129',
+        'HOST': '127.0.0.1',
         'POST': 3306,
     }
 }
@@ -167,3 +168,23 @@ SESSION_CACHE_ALIAS = "default"
 
 # 配置登录url地址
 LOGIN_URL='/user/login' # /accounts/login
+
+# 设置Django的文件存储类
+DEFAULT_FILE_STORAGE='utils.fdfs.storage.FDFSStorage'
+
+# 设置fdfs使用的client.conf文件路径
+FDFS_CLIENT_CONF='./utils/fdfs/client.conf'
+
+# 设置fdfs存储服务器上nginx的IP和端口号
+FDFS_URL='http://172.16.179.131:8888/'
+
+STATIC_ROOT= '/var/www/dailyfresh/static'
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        #使用whoosh引擎
+        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine', #虚拟环境下的路径
+        #索引文件路径
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    }
+}
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'

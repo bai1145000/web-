@@ -1,0 +1,52 @@
+*** Starting uWSGI 2.0.12-debian (64bit) on [Tue Aug 25 19:55:26 2020] ***
+compiled with version: 5.3.1 20160412 on 13 April 2016 08:36:06
+os: Linux-4.15.0-106-generic #107~16.04.1-Ubuntu SMP Thu Jun 4 15:40:05 UTC 2020
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/whb123/lianxi/web-/ttsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+chdir(): No such file or directory [core/uwsgi.c line 2586]
+*** Starting uWSGI 2.0.12-debian (64bit) on [Tue Aug 25 19:56:09 2020] ***
+compiled with version: 5.3.1 20160412 on 13 April 2016 08:36:06
+os: Linux-4.15.0-106-generic #107~16.04.1-Ubuntu SMP Thu Jun 4 15:40:05 UTC 2020
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/whb123/lianxi/web-/ttsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+chdir(): No such file or directory [core/uwsgi.c line 2586]
+*** Starting uWSGI 2.0.12-debian (64bit) on [Tue Aug 25 19:56:11 2020] ***
+compiled with version: 5.3.1 20160412 on 13 April 2016 08:36:06
+os: Linux-4.15.0-106-generic #107~16.04.1-Ubuntu SMP Thu Jun 4 15:40:05 UTC 2020
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/whb123/lianxi/web-/ttsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+chdir(): No such file or directory [core/uwsgi.c line 2586]
+*** Starting uWSGI 2.0.12-debian (64bit) on [Wed Aug 26 12:44:53 2020] ***
+compiled with version: 5.3.1 20160412 on 13 April 2016 08:36:06
+os: Linux-4.15.0-106-generic #107~16.04.1-Ubuntu SMP Thu Jun 4 15:40:05 UTC 2020
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/whb123/lianxi/web-/ttsx
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+chdir(): No such file or directory [core/uwsgi.c line 2586]

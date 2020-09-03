@@ -85,3 +85,20 @@ class IndexActivity(BaseModel):
         db_table = 'df_index_promotion'
         verbose_name = "主页促销活动"
         verbose_name_plural = verbose_name
+
+class IndexTypeGoodsBanner(BaseModel):
+    '''首页分类商品展示模型类'''
+    DISPLAY_TYPE_CHOICES = (
+        (0, "标题"),
+        (1, "图片")
+    )
+
+    type = models.ForeignKey('GoodType', verbose_name='商品类型',on_delete =models.CASCADE)
+    sku = models.ForeignKey('GoodsSKU', verbose_name='商品SKU',on_delete =models.CASCADE)
+    display_type = models.SmallIntegerField(default=1, choices=DISPLAY_TYPE_CHOICES, verbose_name='展示类型')
+    index = models.SmallIntegerField(default=0, verbose_name='展示顺序')
+
+    class Meta:
+        db_table = 'df_index_type_goods'
+        verbose_name = "主页分类展示商品"
+        verbose_name_plural = verbose_name
